@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     int score = 0;
 
-
+    // Question 1 is built with radioGroups, so this code is ensure the user can only choose one answer.
     public void pressAnswer1(View view) {
         RadioButton getAnswer1 = findViewById(R.id.ans1);
         getAnswer1.setChecked(true);
@@ -69,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // check the score for the whole quizz and display at the end
     public void checkScore(View view) {
         RadioButton getAnswer1 = findViewById(R.id.ans1);
-        boolean question1Answer = getAnswer1.isChecked();
         RadioButton getAnswer2 = findViewById(R.id.question2CorrectAnswer);
         boolean question2Answer = getAnswer2.isChecked();
         EditText getAnswer3 = findViewById(R.id.text_question3);
-        String question3Text = getAnswer3.getText().toString();
+        String question3Text = getAnswer3.getText().toString().trim();
         RadioButton getAnswer4 = findViewById(R.id.question4CorrectAnswer);
         boolean question4Answer = getAnswer4.isChecked();
         CheckBox ans1Question5 = findViewById(R.id.question5Ans1);
@@ -96,37 +97,31 @@ public class MainActivity extends AppCompatActivity {
         if (question2Answer) {
             score += 2;
         }
-        if (Objects.equals(question3Text, "SNOOP DOGG")) {
+        if (question3Text.equalsIgnoreCase("snoop dogg")) {
             score += 2;
         }
-        if (Objects.equals(question3Text, "Snoop Dogg")) {
-            score += 2;
-        }
-        if (Objects.equals(question3Text, "snoop dogg")) {
-            score += 2;
-        }
-        if (Objects.equals(question3Text, "Snoop dogg")) {
-            score += 2;
-        }
-        if (Objects.equals(question3Text, "SNOOP dogg")) {
-            score += 2;
-        }
-        if (Objects.equals(question3Text, "snoop DOGG")) {
-            score += 2;
-        }
+
         if (question4Answer) {
             score += 2;
         }
         if (question5Ans1 && !question5Ans2 && question5Ans3 && question5Ans4 && !question5Ans5 && !question5Ans6) {
             score += 2;
         }
-        displayScore("your score is " + score);
+        displayScore();
         score = 0;
     }
 
-    private void displayScore(String message) {
-        TextView scoreView = findViewById(R.id.scoreView);
-        scoreView.setText(message);
+    //code to display the score at the bottom
+    private void displayScore() {
+        if (score == 0){
+            new Toast(getApplicationContext());
+            Toast.makeText(getApplicationContext(), "Your score is 0 , You can do better!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            new Toast(getApplicationContext());
+            Toast.makeText(getApplicationContext(), "Your score is " +score, Toast.LENGTH_LONG).show();
+
+        }
     }
 
 }

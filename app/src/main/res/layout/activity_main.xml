@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,13 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Question 1 \nWhat is the name of Nas's first album?" />
+            android:text="@string/question1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="press on the album cover to select"
+            android:text="@string/q1Inst"
             android:textStyle="italic" />
 
 
@@ -90,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:gravity="center"
-            android:text="Question 2 \nWhich of these artists is NOT a part of Wu-Tang Clan?" />
+            android:text="@string/question2" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -101,32 +100,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Ghostface Killa" />
+                android:text="@string/q2Ans1" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="GZA" />
+                android:text="@string/q2Ans2" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Ol' Dirty Bastard" />
+                android:text="@string/q2Ans3" />
 
             <RadioButton
                 android:id="@+id/question2CorrectAnswer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Public Enemy" />
+                android:text="@string/q2Ans4" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Raekwon" />
+                android:text="@string/q2Ans5" />
         </RadioGroup>
 
         <TextView
@@ -134,13 +133,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:gravity="center"
-            android:text="Question 3 \nWho collaborated with Dr. Dre on \'Nuthin But A G Thang\'?" />
+            android:text="@string/question3" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Write the artist's name below"
+            android:text="@string/q3Inst"
             android:textStyle="italic" />
 
         <EditText
@@ -148,21 +147,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Write here"/>
-         <!--android:textAllCaps="true"/>-->
+            android:hint="@string/q3Hint"
+            android:inputType="text"/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:gravity="center"
-            android:text="Question 4 \nKendrick Lamar has a song called \'The Blacker The Berry\'," />
+            android:text="@string/question4Part1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="In which song Tupac had that same exact line?" />
+            android:text="@string/question4Part2" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -174,25 +174,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Keep Ya Head Up" />
+                android:text="@string/q4Ans1" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Last Wordz" />
+                android:text="@string/q4Ans2" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="The Rose That Grew From Concrete" />
+                android:text="@string/q4Ans3" />
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Been There, Done That" />
+                android:text="@string/q2Ans4" />
         </RadioGroup>
 
         <TextView
@@ -200,19 +200,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:gravity="center"
-            android:text="Question 5 \n \Snoop Dogg is considered as one of West Coast rap greats" />
+            android:text="@string/question5Part1" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Who are some other prominent West Coast rappers?" />
+            android:text="@string/question5Part2" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Choose all West Coast rappers"
+            android:text="@string/q5Inst"
             android:textStyle="italic" />
 
         <CheckBox
@@ -221,49 +221,49 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Kurupt" />
+            android:text="@string/q5Ans1" />
 
         <CheckBox
             android:id="@+id/question5Ans2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Jay Z" />
+            android:text="@string/q5Ans2" />
 
         <CheckBox
             android:id="@+id/question5Ans3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Kendrick Lamar" />
+            android:text="@string/q5Ans3" />
 
         <CheckBox
             android:id="@+id/question5Ans4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Eazy E" />
+            android:text="@string/q5Ans4" />
 
         <CheckBox
             android:id="@+id/question5Ans5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Jeru The Damaja" />
+            android:text="@string/q5Ans5" />
 
         <CheckBox
             android:id="@+id/question5Ans6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Mos Def" />
+            android:text="@string/q5Ans6" />
 
         <TextView
             android:id="@+id/scoreView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
 
         <Button
             android:id="@+id/checkScore"
@@ -271,8 +271,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="check score"
-            android:onClick="checkScore"/>
+            android:onClick="checkScore"
+            android:text="check score" />
 
 
     </LinearLayout>

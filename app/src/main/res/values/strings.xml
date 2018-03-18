@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Quizzapp</string>
+    <string name="question1">Question 1 \nWhat is the name of Nas's first album?</string>
+    <string name="q1Inst">press on the album cover to select</string>
+    <string name="question2">Question 2 \nWhich of these artists is NOT a part of Wu-Tang Clan? </string>
+    <string name="q2Ans1">Ghostface Killa</string>
+    <string name="q2Ans2">GZA</string>
+    <string name="q2Ans3">Ol\' Dirty Bastard</string>
+    <string name="q2Ans4">Public Enemy</string>
+    <string name="q2Ans5">Raekwon</string>
+    <string name="question3">Question 3 \nWho collaborated with Dr. Dre on \'Nuthin But A G Thang\'? </string>
+    <string name="q3Inst">Write the artist\'s name below</string>
+    <string name="q3Hint">Write here</string>
+    <string name="question4Part1">Question 4 \nKendrick Lamar has a song called \'The Blacker The Berry\',</string>
+    <string name="question4Part2">In which song Tupac had that same exact line?</string>
+    <string name="q4Ans1">Keep Ya Head Up</string>
+    <string name="q4Ans2">Last Wordz</string>
+    <string name="q4Ans3">The Rose That Grew From Concrete</string>
+    <string name="q4Ans4">Been There, Done That</string>
+    <string name="question5Part1">Question 5 \n \Snoop Dogg is considered as one of West Coast rap greats</string>
+    <string name="question5Part2">Who are some other prominent West Coast rappers?</string>
+    <string name="q5Inst">Choose all West Coast rappers</string>
+    <string name="q5Ans1">Kurupt</string>
+    <string name="q5Ans2">Jay Z</string>
+    <string name="q5Ans3">Kendrick Lamar</string>
+    <string name="q5Ans4">Eazy E</string>
+    <string name="q5Ans5">Jeru The Damaja</string>
+    <string name="q5Ans6">Mos Def</string>
+
+
 </resources>
